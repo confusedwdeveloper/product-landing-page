@@ -1,0 +1,50 @@
+body {
+  background-color: #032B43;
+}
+#header {
+  display: flex;
+  height: 25vh;
+  justify-content: center;
+  background-color: #eee;
+  color: #333;
+
+}
+h1 {
+  text-align: center;
+  align-self: center;
+  font-size: 1.3em
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#header img {
+  width: 150px;
+
+
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+nav ul li {
+  display: inline;
+  border-right: 1px solid #fff;
+  padding-right: 5px;
+
+
+
+}
+nav ul li:last-child {
+  border:none;
+}
+
+
+
+a {
+  text-decoration:none;
+  color: #fff;
+}
