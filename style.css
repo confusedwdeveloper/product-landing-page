@@ -1,6 +1,7 @@
 body {
   background-color: #032B43;
   color: #fff;
+  font-size: 1em;
 }
 #header {
 
@@ -67,7 +68,7 @@ h3, h4 {
 }
 h4 {
   margin-top: 1em;
-  line-height: 0.5;
+  line-height: 1;
   padding: 1em;
   margin: 0;
 }
@@ -88,4 +89,37 @@ h4 {
   justify-content: space-between;
   border: thin solid #eee;
   margin: 2em auto;
+}
+/* form and shit */
+fieldset {
+  border: none;
+
+
+}
+legend  {
+  font-size: 1em;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 1.5em;
+}
+.para {
+  font-size: 1.2em;
+}
+.para p {
+  line-height: 1.2;
+  text-align: center;
+}
+/* form elements */
+#return {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+label, input, textarea {
+  margin: 1em auto;
+}
+button {
+  width: 50px;
+  height: 30px;
 }

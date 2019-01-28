@@ -17,29 +17,30 @@
   <!-- time to work on a header with nav and a company logo -->
   <header id="header">
 
+    <nav id="nav-bar">
+      <ul>
+
+        <li><a class="nav-link" href="#product-details">Product Details</a></li>
+        <li><a class="nav-link" href="#pricing">pricing</a></li>
+        <li><a class="nav-link" href="#form">Return</a></li>
+
+        <li><a class="nav-link" href="">contact us</a></li>
+
+      </ul>
+    </nav>
     <div class="headline">
 
       <img id="header-img" src="https://cdn2.f-cdn.com/contestentries/875116/21512172/58109bab30b4f_thumb900.jpg" alt="">
       <h1>Fully Customizable boards</h1>
     </div>
 
-    <nav id="nav-bar">
-      <ul>
-
-        <li><a class="nav-link" href="#product-details">Product Details</a></li>
-        <li><a class="nav-link" href="#pricing">pricing</a></li>
-        <li><a class="nav-link" href="">Return</a></li>
-
-        <li><a class="nav-link" href="">contact us</a></li>
-
-      </ul>
-    </nav>
   </header>
   <main>
     <!-- product details -->
-    <p>Check out our lovely selection of homemade chess boards. They have been designed with luxury and user satisfaction in mind. Whether you are a beginner learning the basics of chess or a grandmaster on her way to the world championship, our
+    <p id="para">Check out our lovely selection of homemade chess boards. They have been designed with luxury and user satisfaction in mind. Whether you are a beginner learning the basics of chess or a grandmaster on her way to the world
+      championship, our
       selection of curated chess pieces will meet all your needs. </p>
-    <div id="product-details">
+    <div class="para" id="product-details">
       <h3>Features</h3>
       <ul type="square">
         <li>All of our luxury chess products, including our chess pieces, chess boards and chess sets, have been produced with the discerning chess collector in mind.</li>
@@ -71,6 +72,37 @@
         <img src="https://ae01.alicdn.com/kf/HTB1zkiIzfuSBuNkHFqDq6xfhVXaF/Tournament-Chess-Set-90-Plastic-Filled-Chess-Pieces-and-Green-Roll-up-Vinyl-Chess-Board-Game.jpg" alt="viny chess board" />
         <h4>300$</h4>
       </div>
+    </div>
+    <div id="return">
+
+      <h3>How to retrun</h3>
+      <fieldset>
+        <legend>
+
+          Please fill in this field to initiate return:
+        </legend>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <!-- Name email and product id sounds good to me -->
+          <label for="name">Your name: </label>
+          <br />
+          <input type="text" name="name" id="name" required placeholder="your name" />
+          <br />
+          <label for="date">Date of purchase: </label>
+          <br />
+          <input type="date" required name="date" id="date" placeholder="select a date" />
+          <br />
+          <label for="email">Your email: </label>
+          <br />
+          <input type="email" required name="email" id="email" placeholder="your email address" />
+          <br />
+          <label for="textarea">Anything to add: </label>
+          <br />
+          <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500" spellcheck="true" wrap="soft">Please write your feedback</textarea>
+          <br />
+          <input type="submit" value="Sumbit">
+        </form>
+      </fieldset>
+
     </div>
 
   </main>
