@@ -1,12 +1,18 @@
 body {
   background-color: #032B43;
+  color: #fff;
 }
 #header {
+
+  color: #333;
+
+}
+.headline {
   display: flex;
   height: 25vh;
   justify-content: center;
   background-color: #eee;
-  color: #333;
+
 
 }
 h1 {
@@ -19,18 +25,18 @@ img {
   max-width: 100%;
   height: auto;
 }
-#header img {
+#header-img {
   width: 150px;
 
 
 }
-nav ul {
+#nav-bar ul {
   display: flex;
   justify-content: space-between;
 
 
 }
-nav ul li {
+#nav-bar ul li {
   display: inline;
   border-right: 1px solid #fff;
   padding-right: 5px;
@@ -38,13 +44,20 @@ nav ul li {
 
 
 }
-nav ul li:last-child {
+#nav-bar ul li:last-child {
   border:none;
 }
 
 
 
-a {
+.nav-link {
   text-decoration:none;
   color: #fff;
+  font-size: 0.9em;
+}
+/* user stories 1-4 should be fulfilled. #header #header-img #nav-bar #nav-link */
+/* User story 6 */
+.youtube {
+  display: flex;
+  justify-content: center;
 }
