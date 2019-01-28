@@ -116,7 +116,7 @@ legend  {
   justify-content: space-between;
   align-items: center;
 }
-label, input {
+label, input, textarea {
   margin: 1em auto;
 }
 button {
