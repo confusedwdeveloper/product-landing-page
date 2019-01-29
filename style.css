@@ -6,6 +6,7 @@ body {
 }
 .container {
   display: grid;
+  grid-template-columns: minmax(1fr,300px);
   grid-template-areas:
   "headline"
   "paragraph"
@@ -26,7 +27,7 @@ body {
   display: flex;
   height: 25vh;
   justify-content: center;
-  background-color: #eee;
+  background-color: #fff;
 
 
 }
@@ -106,9 +107,12 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: thin solid #eee;
+
   margin: 2em auto;
   grid-area: offers;
+}
+.pricing-inside {
+  border: thin solid #eee;
 }
 /* form and shit */
 fieldset {
@@ -118,7 +122,7 @@ fieldset {
 }
 legend  {
   font-size: 1em;
-  text-align: center;
+  /* text-align: center; */
   font-style: italic;
   margin-bottom: 1.5em;
 }
@@ -142,6 +146,7 @@ legend  {
   align-items: center;
   grid-area:return;
 }
+
 label, input, textarea {
   margin: 1em auto;
 }
@@ -164,3 +169,44 @@ button {
   font-size: 0.95em;
 }
 /* I think I am all done with set ups. Time to work in media query */
+@media (min-width: 700px) {
+  .nav-link  {
+    font-size: 1em;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "headline headline"
+    "paragraph paragraph"
+    "features youtube"
+    "offers offers"
+    "return return"
+    "footer ."
+  }
+  .youtube {
+    width: auto;
+    height: 65%;
+    justify-self: center;
+    align-self: center;
+  }
+  .pricing-inside {
+    display: flex;
+    flex-direction: row;
+  }
+  #nav-bar ul {
+    justify-content: start;
+  }
+  h1 {
+    font-size: 2em;
+    line-height: 2;
+  }
+  .nav-link {
+    font-size: 1em;
+    margin: auto 1.5em;
+  }
+  #return {
+    justify-self: center;
+  }
+
+}
