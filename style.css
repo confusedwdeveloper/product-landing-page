@@ -50,15 +50,14 @@ img {
 #nav-bar {
   position: fixed;
   top: 0;
-  left: 2.5vw;
 
   background-color: #fff;
-  width: 90.5vw;
+  width: 100%;
 
 }
 #nav-bar ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
 
 }
