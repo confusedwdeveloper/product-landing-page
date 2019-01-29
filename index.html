@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
   <title>Beautiful Chessboard</title>
 </head>
 
-<body>
+<body class="container">
   <!-- time to work on a header with nav and a company logo -->
   <header id="header">
 
@@ -35,84 +35,84 @@
     </div>
 
   </header>
-  <main>
-    <!-- product details -->
-    <p id="para">Check out our lovely selection of homemade chess boards. They have been designed with luxury and user satisfaction in mind. Whether you are a beginner learning the basics of chess or a grandmaster on her way to the world
-      championship, our
-      selection of curated chess pieces will meet all your needs. </p>
-    <div class="para" id="product-details">
-      <h3>Features</h3>
-      <ul type="square">
-        <li>All of our luxury chess products, including our chess pieces, chess boards and chess sets, have been produced with the discerning chess collector in mind.</li>
-        <br>
-        <li>We adhere to the highest quality standards and our master artisans handcraft our chess pieces, chess boards and chess sets out of such luxurious materials as Porcelain, and Walnut Burl.</li>
-        <br>
-        <li>Free Shipping and easy return</li>
 
-      </ul>
+  <!-- product details -->
+  <p id="para">Check out our lovely selection of homemade chess boards. They have been designed with luxury and user satisfaction in mind. Whether you are a beginner learning the basics of chess or a grandmaster on her way to the world
+    championship, our
+    selection of curated chess pieces will meet all your needs. </p>
+  <div class="para" id="product-details">
+    <h3>Features</h3>
+    <ul type="square">
+      <li>All of our luxury chess products, including our chess pieces, chess boards and chess sets, have been produced with the discerning chess collector in mind.</li>
+      <br>
+      <li>We adhere to the highest quality standards and our master artisans handcraft our chess pieces, chess boards and chess sets out of such luxurious materials as Porcelain, and Walnut Burl.</li>
+      <br>
+      <li>Free Shipping and easy return</li>
+
+    </ul>
+  </div>
+  <div class="youtube">
+    <iframe id="video" src="https://www.youtube.com/embed/JVIUX_xYEIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture allow=" fullscreen" width="250px" height="auto">
+      <p>Your browser does not support iframes.</p>
+    </iframe>
+
+  </div>
+  <!-- Time to work on priece section -->
+  <div class="pricing" id="pricing">
+    <h3>Our offers</h3>
+    <div class="product">
+      <img src="https://www.gambitchesssupplies.com.au/WebRoot/ecshared01/Shops/gambitchesssupplies/5776/57CB/1918/3E8D/95BB/AC10/003F/EB29/m812-millennium-chessgenius-pro-electronic-chess-computer-1.jpg" alt="electric board" />
+      <h4>100$</h4>
     </div>
-    <div class="youtube">
-      <iframe id="video" src="https://www.youtube.com/embed/JVIUX_xYEIA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture allow=" fullscreen" width="250px" height="auto">
-        <p>Your browser does not support iframes.</p>
-      </iframe>
-
+    <div class="product">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVEfSgsRRKIs-V3Szg9EyAz3HcbtkLZ42OOa9nGm6CtoCRRKi" alt="wooden board" />
+      <h4>150$</h4>
     </div>
-    <!-- Time to work on priece section -->
-    <div class="pricing" id="pricing">
-      <h3>Our offers</h3>
-      <div class="product">
-        <img src="https://www.gambitchesssupplies.com.au/WebRoot/ecshared01/Shops/gambitchesssupplies/5776/57CB/1918/3E8D/95BB/AC10/003F/EB29/m812-millennium-chessgenius-pro-electronic-chess-computer-1.jpg" alt="electric board" />
-        <h4>100$</h4>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuVEfSgsRRKIs-V3Szg9EyAz3HcbtkLZ42OOa9nGm6CtoCRRKi" alt="wooden board" />
-        <h4>150$</h4>
-      </div>
-      <div class="product">
-        <img src="https://ae01.alicdn.com/kf/HTB1zkiIzfuSBuNkHFqDq6xfhVXaF/Tournament-Chess-Set-90-Plastic-Filled-Chess-Pieces-and-Green-Roll-up-Vinyl-Chess-Board-Game.jpg" alt="viny chess board" />
-        <h4>300$</h4>
-      </div>
+    <div class="product">
+      <img src="https://ae01.alicdn.com/kf/HTB1zkiIzfuSBuNkHFqDq6xfhVXaF/Tournament-Chess-Set-90-Plastic-Filled-Chess-Pieces-and-Green-Roll-up-Vinyl-Chess-Board-Game.jpg" alt="viny chess board" />
+      <h4>300$</h4>
     </div>
-    <div id="return">
+  </div>
+  <div id="return">
 
-      <h3>How to retrun</h3>
-      <fieldset>
-        <legend>
+    <h3>How to retrun</h3>
+    <fieldset>
+      <legend>
 
-          Please fill in this field to initiate return:
-        </legend>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-          <!-- Name email and product id sounds good to me -->
-          <label for="name">Your name: </label>
-          <br />
-          <input type="text" name="name" id="name" required placeholder="your name" />
-          <br />
-          <label for="date">Date of purchase: </label>
-          <br />
-          <input type="date" required name="date" id="date" placeholder="select a date" />
-          <br />
-          <label for="email">Your email: </label>
-          <br />
-          <input type="email" required name="email" id="email" placeholder="your email address" />
-          <br />
-          <label for="textarea">Anything to add: </label>
-          <br />
-          <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500" spellcheck="true" wrap="soft">Please write your feedback</textarea>
-          <br />
-          <input type="submit" value="Sumbit">
-        </form>
-      </fieldset>
+        Please fill in this field to initiate return:
+      </legend>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <!-- Name email and product id sounds good to me -->
+        <label for="name">Your name: </label>
+        <br />
+        <input type="text" name="name" id="name" required placeholder="your name" />
+        <br />
+        <label for="date">Date of purchase: </label>
+        <br />
+        <input type="date" required name="date" id="date" placeholder="select a date" />
+        <br />
+        <label for="email">Your email: </label>
+        <br />
+        <input type="email" required name="email" id="email" placeholder="your email address" />
+        <br />
+        <label for="textarea">Anything to add: </label>
+        <br />
+        <textarea name="textarea" id="textarea" cols="30" rows="10" maxlength="500" spellcheck="true" wrap="soft">Please write your feedback</textarea>
+        <br />
+        <input type="submit" value="Sumbit">
+      </form>
+    </fieldset>
 
-    </div>
-    <hr />
-    <footer id="contact-us" class="footer">
-      <a href="#" target="_blank">About Us</a>
-      <a href="#" target="_blank">Contact Us</a>
-      <a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+  </div>
+  <hr />
+  <footer id="contact-us" class="footer">
+    <a href="#" target="_blank">About Us</a>
+    <a href="#" target="_blank">Contact Us</a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
 
-    </footer>
+  </footer>
 
-  </main>
+
 
 
 
