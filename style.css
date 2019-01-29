@@ -3,9 +3,22 @@ body {
   color: #fff;
   font-size: 1em;
 }
+.container {
+  display: grid;
+  grid-template-areas:
+  "headline"
+  "paragraph"
+  "features"
+  "youtube"
+  "offers"
+  "return"
+  "footer";
+}
 #header {
 
   color: #333;
+  grid-area: headline;
+
 
 }
 .headline {
@@ -41,6 +54,7 @@ img {
   display: inline;
   border-right: 1px solid #fff;
   padding-right: 5px;
+  grid-area: nav-bar;
 
 
 
@@ -54,13 +68,14 @@ img {
 .nav-link {
   text-decoration:none;
   color: #fff;
-  font-size: 0.9em;
+  font-size: 0.85em;
 }
 /* user stories 1-4 should be fulfilled. #header #header-img #nav-bar #nav-link */
 /* User story 6 */
 .youtube {
   display: flex;
   justify-content: center;
+  grid-area: youtube;
 }
 h3, h4 {
   text-align: center;
@@ -78,7 +93,7 @@ h4 {
 }
 .product {
   border: 2px solid white;
-  margin: 1em auto;
+  margin: 0; auto;
 
 }
 .pricing {
@@ -89,6 +104,7 @@ h4 {
   justify-content: space-between;
   border: thin solid #eee;
   margin: 2em auto;
+  grid-area: offers;
 }
 /* form and shit */
 fieldset {
@@ -102,12 +118,17 @@ legend  {
   font-style: italic;
   margin-bottom: 1.5em;
 }
-.para {
+#para {
   font-size: 1.2em;
-}
-.para p {
-  line-height: 1.2;
+  font-size: 1.2em;
   text-align: center;
+  grid-area: paragraph;
+}
+.para  {
+  font-size: 1.2em;
+  line-height: 1.2;
+  text-align: left;
+  grid-area: features;
 }
 /* form elements */
 #return {
@@ -115,6 +136,7 @@ legend  {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  grid-area:return;
 }
 label, input, textarea {
   margin: 1em auto;
@@ -129,8 +151,11 @@ button {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  grid-area: footer;
 }
 .footer a {
   color: #fff;
   margin: auto 1em;
+  text-decoration: none;
+  font-size: 0.95em;
 }
